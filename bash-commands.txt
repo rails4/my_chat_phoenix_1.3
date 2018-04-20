@@ -1,0 +1,6 @@
+brew services start postgresql
+mix ecto.create
+mix deps.compile
+mix deps.get
+mix phx.new chat
+mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez
